@@ -1,0 +1,27 @@
+<div class="flex center-content">
+  <form class="gap">
+    <!-- Поле З'єднання -->
+    <div class="form-group">
+      <label>З'єднання:</label>
+      <span>Онлайн</span>
+    </div>
+
+    <!-- Перемикач On/Off -->
+    <div class="form-group">
+      <label>Перемикач:</label>
+      <nz-switch [(ngModel)]="switchValue"></nz-switch>
+    </div>
+
+    <!-- Вибір кольору -->
+    <div class="form-group">
+      <label>Виберіть колір:</label>
+      <input [(colorPicker)]="color" [style.background]="color" />
+    </div>
+
+    <!-- Слайдер яскравості -->
+    <div class="form-group">
+      <label>Яскравість:</label>
+      <ngx-slider [(value)]="value" [options]="options"></ngx-slider>
+    </div>
+  </form>
+</div>
